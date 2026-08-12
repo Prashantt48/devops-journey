@@ -1,6 +1,4 @@
-# Linux Basic Commands
-
-## 1. Navigation
+# Linux Basic Commands## 1. Navigation
 
 ### Print current directory
 pwd
