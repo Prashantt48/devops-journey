@@ -6,3 +6,4 @@
 - pwd
 - grep
 - awk
+- rm -rf
