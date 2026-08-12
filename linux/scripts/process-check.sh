@@ -1,4 +1,4 @@
-i#!/bin/bash
+#!/bin/bash
 
 echo "===================================="
 echo "        PROCESS CHECK"
@@ -29,5 +29,5 @@ fi
 
 echo
 echo "===================================="
-echo "       PROCESS CHECK COMPLETE"
+echo "       PROCESS CHECK COMPLETE THANK YOU"
 echo "===================================="

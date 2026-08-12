@@ -26,5 +26,5 @@ done
 
 echo
 echo "===================================="
-echo "       SERVICE CHECK COMPLETE"
+echo "       SERVICE CHECK COMPLETE THANKS"
 echo "===================================="
