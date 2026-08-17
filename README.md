@@ -27,6 +27,7 @@ Redis / Kafka / Database
 
 A DevOps engineer may need to troubleshoot every layer, but Linux knowledge is underneath most of it.
 
+
 What Linux should YOU learn for DevOps?
 
 Don't try to become a Linux administrator first.
