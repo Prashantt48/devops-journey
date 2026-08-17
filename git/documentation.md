@@ -5,7 +5,7 @@
 ## Beginner
 Q1 What is Git?
 Ans:- Git is a distributed version control system used to track changes in source code and files.
-
+```text 
 It allows developers to:
 
 Track code changes
@@ -15,12 +15,42 @@ Maintain different versions of code
 Revert changes
 Merge changes
 Work locally without always requiring a central server
-
 Git maintains the complete history of changes in a repository.
 
+
 Q2 Git vs GitHub?
-Ans: 
-What is a repository?
+Ans: Git is the version control software, whereas GitHub is a cloud-based platform that hosts Git repositories and provides collaboration features.
+
+Git	                    GitHub
+Version control system	Repository hosting platform
+Runs locally	        Cloud/web platform
+Tracks changes	        Hosts repositories
+Branching/merging	    Pull Requests
+Commit history	        Code review
+CLI tool	            Web UI + Git services
+
+
+Q3 What is a repository?
+Ans : A Git repository is a directory that contains the project files along with Git's metadata and history.
+There are two common types:
+Local repository
+Located on your machine.
+
+Developer Machine
+      ↓
+Local Git Repository
+
+Remote repository
+Hosted on platforms such as GitHub/GitLab.
+Developer
+    ↓
+Local Repository
+    ↓
+Remote Repository
+
+The .git directory contains Git's internal information.
+
+
 What is a commit?
 What is staging?
 git add vs git commit?
