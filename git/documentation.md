@@ -4,9 +4,10 @@
 
 ## Beginner
 
-Q1 What is Git?
+1. What is Git?
 
 Ans:- 
+
 Git is a distributed version control system used to track changes in source code and files.
 It allows developers to:
 Track code changes
@@ -18,29 +19,35 @@ Merge changes
 Work locally without always requiring a central server
 Git maintains the complete history of changes in a repository.
 
-Q2 Git vs GitHub?
+2. Git vs GitHub?
+
 Ans: 
+
 Git is the version control software, whereas GitHub is a cloud-based platform that hosts Git repositories and provides collaboration features.
 
-Git                         	GitHub
-Version control system  	Repository hosting platform
-Runs locally            	Cloud/web platform
-Tracks changes          	Hosts repositories
-Branching/merging       	Pull Requests
-Commit history          	Code review
-CLI tool                	Web UI + Git services
+Git                                  	GitHub
+Version control system  	        Repository hosting platform
+Runs locally            	        Cloud/web platform
+Tracks changes          	        Hosts repositories
+Branching/merging       	        Pull Requests
+Commit history          	        Code review
+CLI tool                	        Web UI + Git services
 
-Q3 What is a repository?
+3. What is a repository?
+
 Ans : 
+
 A Git repository is a directory that contains the project files along with Git's metadata and history.
 There are two common types:
 Local repository
 Located on your machine.
+
 Developer Machine
       ↓
 Local Git Repository
 
 Remote repository
+
 Hosted on platforms such as GitHub/GitLab.
 Developer
     ↓
@@ -50,8 +57,10 @@ Remote Repository
 
 The .git directory contains Git's internal information.
 
-Q4 What is a commit?
+4. What is a commit?
+
 Ans:
+
 A commit is a snapshot of changes recorded in the Git repository.
 A commit contains information such as:
 Changes
@@ -62,12 +71,15 @@ Parent commit
 Commit hash
 
 Example:
+
 git commit -m "Add Kubernetes deployment"
 A commit receives a unique SHA/hash.
 
 
-Q5 What is staging?
+5. What is staging?
+
 Ans: 
+
 The staging area is an intermediate area between the working directory and the Git repository.
 The typical flow is:
 Working Directory
@@ -81,8 +93,10 @@ Staging Area
 Git Repository
 
 
-Q6 git add vs git commit?
+6. git add vs git commit?
+
 Ans :-
+
 git add
 Moves changes into the staging area.
 git add file.txt
@@ -104,7 +118,8 @@ git commit
     ↓
 Local repository
 
-Q7 git fetch vs git pull?
+7. git fetch vs git pull?
+
 Ans:
 git fetch
 Downloads changes from the remote repository but does not modify your current working branch.
@@ -122,8 +137,10 @@ git pull
 
 downloads remote changes and integrates them into your current branch.
 
-Q8 What is .gitignore?
+8. What is .gitignore?
+
 Ans: 
+
 .gitignore specifies files and directories that Git should not track.
 Common examples:
 .env
@@ -140,8 +157,10 @@ This prevents sensitive files, generated files, and temporary files from acciden
 Important interview point:
 .gitignore does not automatically remove a file that is already tracked.
 
-Q9 What is a branch?
+9. What is a branch?
+
 Ans :
+
 A branch is a separate line of development that allows developers to work on changes independently without directly modifying the main production code.
 Example:
 
@@ -168,8 +187,10 @@ Code Review
 Merge
 
 
-Q10 What is HEAD?
+10. What is HEAD?
+
 Ans:
+
 HEAD is a reference that points to the current checked-out commit or branch.
 
 Normally:
@@ -193,6 +214,7 @@ git log --oneline
 ## intermediate
 
 01. Merge vs rebase?
+
 Ans:
 
 Merge
@@ -241,7 +263,8 @@ But rebase rewrites commit history.
 
 02. What is a Pull Request?
 
-Ans : A Pull Request is a request to merge changes from one branch into another branch.
+Ans : 
+A Pull Request is a request to merge changes from one branch into another branch.
 
 Example:
 
@@ -261,8 +284,8 @@ Merge
 In a DevOps environment, CI pipelines are commonly triggered when a PR is created or updated.
 
 03. How do you resolve merge conflicts?
-Ans: 
 
+Ans: 
 A merge conflict occurs when Git cannot automatically determine which changes should be retained.
 
 Example:
@@ -292,11 +315,10 @@ Run tests
 
 Conflict markers look like:
 
-<<<<<<< HEAD
+HEAD
 Current branch
-=======
 Incoming branch
->>>>>>> feature
+feature
 
 After resolving:
 
@@ -306,6 +328,7 @@ Then complete the merge.
 
 
 04. What is git stash?
+
 Ans:
 git stash temporarily stores uncommitted changes so that I can switch branches or perform another Git operation without committing incomplete work.
 
@@ -323,6 +346,7 @@ I can stash my unfinished changes, fix the production issue, and then restore my
 
 
 05. git reset vs git revert?
+
 Ans:
 Reset
 
@@ -349,8 +373,8 @@ For shared or production branches, I prefer git revert because it preserves the 
 
 
 06. What is cherry-pick?
-Ans:
 
+Ans:
 git cherry-pick applies the changes from a specific commit to the current branch.
 
 Example:
@@ -372,6 +396,7 @@ Production example:
 If a bug fix exists in a development branch but I need only that particular fix in the production branch, I can cherry-pick the specific commit after appropriate testing and approval.
 
 07. What is a detached HEAD?
+
 Ans:
 A detached HEAD occurs when HEAD points directly to a commit rather than a branch.
 
@@ -397,8 +422,8 @@ If you make commits in detached HEAD and want to keep them, create a branch:
 git switch -c my-new-branch
 
 08. How do you undo the last commit?
-Ans:
 
+Ans:
 There are multiple approaches depending on the situation.
 
 If I want to keep the changes staged:
@@ -416,6 +441,7 @@ I choose the method based on whether the commit has already been pushed and whet
 
 
 09. How do you recover deleted commits?
+
 Ans:
 Git often retains unreachable commits for some time.
 I can use:
@@ -435,8 +461,8 @@ git switch -c recovery <commit-id>
 This is a very useful Git recovery mechanism.
 
 10. What is a remote repository?
-Ans:
 
+Ans:
 A remote repository is a Git repository hosted somewhere outside the local machine, such as GitHub, GitLab, or Bitbucket.
 
 Example:
